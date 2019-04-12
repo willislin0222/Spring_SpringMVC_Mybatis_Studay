@@ -1,0 +1,12 @@
+DROP TABLE t_user
+
+CREATE TABLE t_user (
+  userid int PRIMARY KEY IDENTITY(1,1) NOT NULL,
+  username varchar(20) DEFAULT NULL,
+  password varchar(20) DEFAULT NULL,
+  name varchar(20) DEFAULT NULL,
+) 
+
+
+INSERT INTO t_user(username, password, name)
+VALUES ('jerry', 'sl311', 'Jerry bruce');
